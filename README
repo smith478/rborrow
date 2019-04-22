@@ -1,0 +1,17 @@
+This is partial code.  Pieces are missing, as explained in more detail below.  It's intended to showcase some of our ideas.
+
+This is some code designed to scrape data and process data from the Reddit lending platform r/borrow.  More details about the project are here: https://sites.google.com/view/rborrow/home
+
+Files available in this repo:
+- main_scraper.py: This is the file that repeatedly looks for new posts, processes, and send out email notifications about them.
+- helpers/custombst.py: This is the modified BST that we used to make our data quickly searchable.
+- helpers/*: These are various parsing libraries to help with scraping data
+
+Files not available:
+- Historical scraper: To build our model we made some code to scrape data going back in time.
+- Model: We ran new posts through a model we had trained on historical data.  Here instead, we have a placeholder modelon.R that always returns 100%.
+- Clustering logic: We use clusters of subreddits, stored in data/srs_tabs.csv, but we don't include the code used to make these.
+
+This code was authored by:
+Dan Smith
+T.J. Gaffney
